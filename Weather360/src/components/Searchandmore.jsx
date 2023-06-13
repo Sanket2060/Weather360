@@ -1,31 +1,23 @@
-import Hotplacedata from "./Hotplacedata";
+import Square from "./Square";
 function Searchandmore() {
-    
-     
-    return (
-      <>
-      {/* <div className="searchboxandmore">
+
+
+  return (
+    <>
+      <div className="primarybox">
 
         <span className="searchbox">
-        <i className="search fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Search"/>
-        Location
-
+          <i className="fa-solid fa-magnifying-glass"></i>
+          <input type="text" className="inputbox" placeholder="Search" />
+          <span className="text">Location</span>
         </span>
-        <span className="hlt">HOTTEST LOCATIONS</span>
-          <Hotplacedata/>
-      </div> */}
-       <div className="majorbox">
-       <span className="searchbox">
-        <i className="search fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Search"/>
-        Location
+        <div style={{ marginTop: "30px" }}>HOTTEST LOCATIONS</div>
+        <Square/>
 
-        </span>
-       </div>
-      </>
-    )
-  }
-  
-  export default Searchandmore;
-  
+      </div>
+
+    </>
+  )
+}
+
+export default Searchandmore;

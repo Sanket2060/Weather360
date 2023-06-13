@@ -1,75 +1,7 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
-  background-color: black;
+  /* background-color: black; */
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -84,56 +16,43 @@ header{
   color: white;
   padding: 15px 3px;
 }
-/* .searchbox{
-
-  
-} */
 .main{
-  background-image: url("https://www.kget.com/wp-content/uploads/sites/2/2023/03/AP23073634272733.jpg?w=960&h=540&crop=1");
-  height: 40vh;
+  background-image: url('https://www.thestatesman.com/wp-content/uploads/2021/10/rain.jpg');
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+  
 }
-/* .searchbox{
-  background-color: white;
-  /* border: 1px solid black; */
-  /* border-radius: 4px;
-  padding: 10px 15px;}
-   */
- */
-input{
-  padding: 5px 10px;
+.inputbox{
+  width: 18vw;
+  height: 5vh;
   border: none;
-  width: 350px;
-  /* background-color: white; */
+  font-size: 20px;
+  margin-left: 15px;
 }
- input:focus{
-  border-color: white;
-} 
-/* .search{
+.searchbox{
   background-color: white;
-}
-.hlt{
-  display: block;
-  background-color: white;
-}
-.searchboxandmore{
-  position: absolute;
-  top: 121px;
-  left: 339px;
-  background-color: green;
-} */
-.majorbox{
-  background-color: white;
-  position: absolute;
-  top: 121px;
-  left: 339px;
+ color: black;
+  font-size: 20px;
   border: 1px solid black;
+  padding: 9px 7px;
+  border-radius: 15px;
 }
-.searchbox {
-  background-color: white;
+.primarybox{
+  position: absolute;
+  top: 114px;
+  left: 340px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
 }
-input{
-   background-color: white;
-}
+.square{
 
+  width: 10vw;
+  height: 7vw;
+  margin-right: 25px;
+  border: 1px solid black;
+  background-color: white;  
+  border-radius: 4px;
+
+}
