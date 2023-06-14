@@ -12,7 +12,9 @@ function Searchandmore() {
           <span className="text">Location</span>
         </span>
         <div style={{ marginTop: "30px" }}>HOTTEST LOCATIONS</div>
-        <Square/>
+        <Square city="Nepalgunj"/>
+        <Square city="Dhangadi"/>
+        
 
       </div>
 
