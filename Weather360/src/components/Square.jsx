@@ -1,22 +1,26 @@
 import { useEffect } from "react";
-import axios from "axios";
+import axios, { Axios } from "axios";
 import { BsFillCloudFill } from "react-icons/bs";
 import { BsCircle } from "react-icons/bs";
 
 const Square = ({ city }) => {
-  useEffect(() => {
-    axios.get("https://weather-by-api-ninjas.p.rapidapi.com/v1/weather", {
+  useEffect(()=>{
+    fetch();
+    },[])
+  const fetch = async () => {
+    const fetcheddata = await axios.get('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather', {
       headers: {
         'X-RapidAPI-Key': '6ebac47261msh4bfff5ffd07d7b9p18536djsn30b866d3084f',
         'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
       },
-      params: { city: "pokhara" }
-    }
-    )
-  }, []).then((response) => {
-    console.log("Done");
-  })
-  return (
+      params:{
+        city:city
+      }
+   
+    })
+    console.log(fetcheddata.data);
+  }
+    return (
     <>
       <span className="square" style={{ marginTop: "17px", display: "inline-block" }}>
         {city}
