@@ -13,7 +13,7 @@ function Searchandmore() {
         </span>
         <div style={{ marginTop: "30px" }}>HOTTEST LOCATIONS</div>
         <Square city="Nepalgunj"/>
-        <Square city="dhangadhi"/>
+        <Square city="Dhangadhi"/>
         
 
       </div>
