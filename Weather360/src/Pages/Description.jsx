@@ -1,7 +1,10 @@
+import { useContext } from "react";
 const Description=()=>{
+  const {searchinput}=useContext(searchcontext);
+
   return (
   <>
-     <h1>This is the description page</h1>
+     <h1>{searchinput}</h1>
   </>     
   )
 }

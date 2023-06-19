@@ -9,6 +9,7 @@ function Nav() {
                     <span className="named">  Weather360</span>
                 </span>
                 <i class="fa-solid fa-bars"></i>
+               
             </header>
         </>
     )
