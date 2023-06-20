@@ -2,12 +2,9 @@ import { useContext, useEffect, useState } from "react";
 import { searchcontext } from "../App";
 
 const Description=()=>{
-  console.log("Hello world");
-  const {searchinput}=useContext(searchcontext);
-  useEffect(()=>{
-    
-    console.log(searchinput);
-  },[searchinput]);
+const {searchinput}=useContext(searchcontext);
+  // console.log(searchinput);
+  
 
   return (
   <>
