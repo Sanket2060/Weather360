@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
 import Square from "./Square";
+import { searchcontext } from "../App";
 function Searchandmore() {
   const {setsearchinput}=useContext(searchcontext);
-//  console.log(searchinput);
   return (
     
     <>

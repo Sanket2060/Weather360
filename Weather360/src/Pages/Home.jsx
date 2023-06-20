@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import '../App.css'
 import Searchandmore from '../components/Searchandmore'
 import News from '../components/News'
@@ -8,28 +9,28 @@ import axios from 'axios'
 
 
 const Home=()=>{
-    const fetchdata = async () => {
-        const fetcheddata = await axios.get("https://google-news-api1.p.rapidapi.com/search", {
-          headers: {
-            'X-RapidAPI-Key': '6ebac47261msh4bfff5ffd07d7b9p18536djsn30b866d3084f',
-            'X-RapidAPI-Host': 'google-news-api1.p.rapidapi.com'
-          },
-          params: {
-            language: 'EN',
-            q: 'weather and nepal',
-            sort: 'date:desc',
-            limit: '3'
-          }
+    // const fetchdata = async () => {
+    //     const fetcheddata = await axios.get("https://google-news-api1.p.rapidapi.com/search", {
+    //       headers: {
+    //         'X-RapidAPI-Key': '6ebac47261msh4bfff5ffd07d7b9p18536djsn30b866d3084f',
+    //         'X-RapidAPI-Host': 'google-news-api1.p.rapidapi.com'
+    //       },
+    //       params: {
+    //         language: 'EN',
+    //         q: 'weather and nepal',
+    //         sort: 'date:desc',
+    //         limit: '3'
+    //       }
     
-        });
-        console.log(fetcheddata.data);
+    //     });
+    //     console.log(fetcheddata.data);
     
     
-      }
-      useEffect((() => {
-        fetchdata();
+    //   }
+    //   useEffect((() => {
+    //     fetchdata();
     
-      }), []);
+    //   }), []);
   return(
     <>
     <main className='main'>

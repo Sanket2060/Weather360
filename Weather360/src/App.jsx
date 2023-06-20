@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
 import { createContext } from 'react'
@@ -8,23 +9,23 @@ import axios from 'axios'
 // import { Home } from '@material-ui/icons'
 import Home from './Pages/Home'
 import Description from './Pages/Description'
-const searchcontext = createContext();
-const [searchinput, setsearchinput] = useState("");
+export const searchcontext = createContext();
 
 function App() {
-
+  const [searchinput, setsearchinput] = useState("");
+  
   return (
     <>
       <Nav />
       <BrowserRouter>
-        <Routes>
           <searchcontext.Provider value={{ searchinput, setsearchinput }}>
+        <Routes>
             <Route path='home' element={<Home />} />
             <Route path='*' element={<Home />} />
             <Route path='/' element={<Home />} />
             <Route path='description' element={<Description />} />
-          </searchcontext.Provider>
         </Routes>
+          </searchcontext.Provider>
       </BrowserRouter>
     </>
   )
