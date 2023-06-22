@@ -33,7 +33,7 @@ const Home=()=>{
     //   }), []);
   return(
     <>
-    <main className='main'>
+        <main className='main'>
     <Searchandmore />
   </main>
   <div className="news" style={{ backgroundColor: "black", display: 'flex', justifyContent: 'space-around' }}>
@@ -41,8 +41,8 @@ const Home=()=>{
     <News newstitle="Chances of heavy rain and amids floods" newsimg="https://www.arc.int/sites/default/files/inline-images/Flood.png" />
     <News newstitle="Yarshagumba affected due to Climate Change" newsimg="https://www.swotahtravel.com/images/blogs/cover/himalayan%20Yarsagumba.jpg" />
 </div >
-    </>
-
+</>
+    
 
   )
 

@@ -1,14 +1,20 @@
-function Nav() {
+import { NavLink,BrowserRouter } from "react-router-dom"
+import { Link } from "react-router-dom"
+function Nav({setdropdownclick,dropdownclick}) {
+ const dropdownfunction=()=>{
+    setdropdownclick(!dropdownclick);
 
+
+ }
     return (
         <>
             <header>
                 <span className="namedintro">
 
                     <i className="fa-regular fa-cloud"></i>
-                    <span className="named">  Weather360</span>
+                    <span className="named text-blue-300">  Weather360</span>
                 </span>
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" onClick={dropdownfunction}></i>           
                
             </header>
         </>
