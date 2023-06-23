@@ -28,11 +28,11 @@ function App() {
       <div className="positionedrelative relative ">
         <Nav setdropdownclick={setdropdownclick} dropdownclick={dropdownclick}/>
         <BrowserRouter>
-          <div className="dropdownmenu flex flex-col absolute top-[65px] left-[1160px] text-white bg-black invisible">
-            <Link to="/Home"><div className="Home text-inherit hover:bg-white hover:text-black">Home</div></Link>
-            <Link to="/Description"> <div className="Description text-inherit  hover:bg-white hover:text-black">Description</div></Link>
-            <Link to="/Aboutus"> <div className="Aboutus text-inherit  hover:bg-white hover:text-black">About us</div></Link>
-            <Link to="/Contactus">   <div className="Contactus text-inherit  hover:bg-white hover:text-black">Contact us</div></Link>
+          <div className="dropdownmenu flex flex-col justify-between text-lg absolute top-[65px] left-[1145px] text-white bg-black visible hover:cursor-pointer">
+            <Link to="/Home"><div className="Home p-4  text-inherit hover:bg-white hover:text-black">Home</div></Link>
+            {/* <Link to="/Description"> <div className="Description p-4 text-inherit  hover:bg-white hover:text-black">Description</div></Link> */}
+            <Link to="/Aboutus"> <div className="Aboutus p-4 text-inherit  hover:bg-white hover:text-black">About us</div></Link>
+            <Link to="/Contactus">   <div className="Contactus p-4 text-inherit  hover:bg-white hover:text-black">Contact us</div></Link>
           </div>
 
           <searchcontext.Provider value={{ searchinput, setsearchinput }}>

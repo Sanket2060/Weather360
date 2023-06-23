@@ -14,7 +14,7 @@ function Nav({setdropdownclick,dropdownclick}) {
                     <i className="fa-regular fa-cloud"></i>
                     <span className="named text-blue-300">  Weather360</span>
                 </span>
-                <i class="fa-solid fa-bars" onClick={dropdownfunction}></i>           
+                <i class="fa-solid fa-bars hover:cursor-pointer" onClick={dropdownfunction}></i>           
                
             </header>
         </>
