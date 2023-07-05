@@ -25,7 +25,18 @@ const {searchinput}=useContext(searchcontext);
     
   return (
   <>
-     <h1>This is the searched thing:{searchinput}</h1>
+     {/* <h1 className="center">{searchinput}</h1> */}
+     {/* <h1>This is the searched thing:{searchinput}</h1> */}
+     <div className="sidebarleft w-15 h-60 [&>*]:w-[15.5rem] [&>*]:h-12 [&>*]:border-black [&>*]:border-b-[1px]">
+       <div className="feelslike  ">Feels like:</div>
+       <div className="cloudpct">Cloud-pct</div>
+       <div className="maxtemp">Max-temp</div>
+       <div className="mintemp">Min-temp</div>
+
+
+     </div>
+
+     
   </>     
   )
 }
