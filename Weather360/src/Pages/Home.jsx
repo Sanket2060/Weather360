@@ -14,7 +14,6 @@ import Description from './Description'
 const Home=()=>{
     const {searchinput}=useContext(searchcontext);
     const [searchtried,setsearchtried]=useState(false);
-    console.log("Hey");
     useEffect(()=>{
       console.log(searchtried);
 

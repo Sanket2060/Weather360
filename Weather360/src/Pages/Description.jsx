@@ -7,7 +7,6 @@ const Description = ({ searchtried }) => {
   const { searchinput } = useContext(searchcontext);
   // console.log(searchinput);
   const fetchcitydata = async () => {
-    console.log("Code yeta samma pugeko xa hai");
     const fetchedcitydata = await axios.get("https://weather-by-api-ninjas.p.rapidapi.com/v1/weather", {
       Headers: {
         'X-RapidAPI-Key': '6ebac47261msh4bfff5ffd07d7b9p18536djsn30b866d3084f',
@@ -29,7 +28,7 @@ const Description = ({ searchtried }) => {
       {/* <h1 className="center">{searchinput}</h1> */}
       {/* <h1>This is the searched thing:{searchinput}</h1> */}
       <div className="descriptioncontainer flex justify-evenly font-Roboto Condensed ">
-        <div className="sidebarleft mt-[17px] w-15 h-60 [&>*]:w-[15.5rem] [&>*]:h-5 [&>*]:border-black [&>*]:border-b-[1px] [&>*]:mb-4 [&>*]:'Agdasima' ">
+        <div className="sidebarleft mt-[17px] w-15 h-60 [&>*]:w-[15.5rem] [&>*]:h-5 [&>*]:border-black [&>*]:border-b-[1px] [&>*]:mb-4 [&>*]:font-Agdasima ">
           <div className="feelslike">Feels like:</div>
           <div className="cloudpct">Cloud-pct</div>
           <div className="maxtemp">Max-temp</div>
@@ -38,7 +37,7 @@ const Description = ({ searchtried }) => {
         <div className="center">
           <Square city="Pokhara" className="mt-0" />
         </div>
-        <div className="sidebarright mt-[17px] ml-[-23px] w-15 h-60 [&>*]:w-[15.5rem] [&>*]:h-5 [&>*]:border-black [&>*]:border-b-[1px] [&>*]:mb-4">
+        <div className="sidebarright mt-[17px] ml-[-23px] w-15 h-60 [&>*]:w-[15.5rem] [&>*]:h-5 [&>*]:border-black [&>*]:border-b-[1px] [&>*]:mb-4 [&>*]:font-Agdasima">
           <div className="feelslike">Feels like:</div>
           <div className="cloudpct">Cloud-pct</div>
           <div className="maxtemp">Max-temp</div>
