@@ -14,6 +14,11 @@ import Description from './Description'
 const Home=()=>{
     const {searchinput}=useContext(searchcontext);
     const [searchtried,setsearchtried]=useState(false);
+    console.log("Hey");
+    useEffect(()=>{
+      console.log(searchtried);
+
+    },[searchtried])
     // const fetchdata = async () => {
     //     const fetcheddata = await axios.get("https://google-news-api1.p.rapidapi.com/search", {
     //       headers: {
