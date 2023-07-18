@@ -53,7 +53,7 @@ const Home=()=>{
       <div className="news" style={{ backgroundColor: "black", display: 'flex', justifyContent: 'space-around' }}>
       <News newstitle="Continuous rain in Nepal" newsimg="https://as2.ftcdn.net/v2/jpg/01/76/80/43/1000_F_176804344_cVgrFLEi0tB1SeP0xJ6YufQAaUhQ3TjW.jpg" />
       <News newstitle="Chances of heavy rain and amids floods" newsimg="https://www.arc.int/sites/default/files/inline-images/Flood.png" />
-      <News newstitle="Yarshagumba affected due to Climate Change" newsimg="https://www.swotahtravel.com/images/blogs/cover/himalayan%20Yarsagumba.jpg" />
+      <News newstitle="Prices of yarshagumba peaked" newsimg="https://www.swotahtravel.com/images/blogs/cover/himalayan%20Yarsagumba.jpg" />
   </div >
     }
   

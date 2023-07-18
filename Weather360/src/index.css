@@ -15,6 +15,10 @@
   padding: 0px;
   box-sizing: border-box;
 }
+.body{
+  max-height: 100vh;
+  
+}
 header{
   background-color: black;
   font-family: 'Lato', sans-serif;
@@ -30,7 +34,7 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 50vh;
+  height: 50.7vh;
   
 }
 .inputbox{
@@ -85,11 +89,11 @@ header{
   margin-top: -22px;
 }
 .newsdiv{
-  padding-top: 20px;
+  padding-top: 8px;
   background-color: black;
   color: white;
   width: fit-content;
-  height: 50vh;
+  height: 41vh;
   margin-left: 15px;
   border: 1px solid black;
   
