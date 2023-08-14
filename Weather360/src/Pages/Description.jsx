@@ -4,19 +4,28 @@ import axios from "axios";
 import Square from "../components/Square";
 
 const Description = ({ searchtried }) => {
+  const [fetchedcitydata,setFetchedcitydata]=useState("NULL");
   const { searchinput } = useContext(searchcontext);
-  // console.log(searchinput);
+  console.log(searchinput);
   const fetchcitydata = async () => {
-    const fetchedcitydata = await axios.get("https://weather-by-api-ninjas.p.rapidapi.com/v1/weather", {
-      Headers: {
+    try{
+    const fetchedcitydata = await axios.get('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather', {
+      headers: {
         'X-RapidAPI-Key': '6ebac47261msh4bfff5ffd07d7b9p18536djsn30b866d3084f',
         'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
       },
       params: {
-        city: {searchinput}
+        city: searchinput
       }
     });
-    console.log(fetchedcitydata.data);
+    setFetchedcitydata(fetchedcitydata.data);
+  }
+  catch(err){
+     console.log("Error caused by: "+err);
+  }
+    
+    console.log("done");
+    console.log(fetchedcitydata);
 
   }
   if (searchtried) {
@@ -29,20 +38,21 @@ const Description = ({ searchtried }) => {
       {/* <h1>This is the searched thing:{searchinput}</h1> */}
       <div></div>
       <div className="descriptioncontainer flex justify-evenly items-center font-Roboto Condensed h-[20.2rem]  bg-red-200">
-        <div className="sidebarleft mt-[17px] w-15 h-60 [&>*]:w-[15.5rem] [&>*]:h-5 [&>*]:border-black [&>*]:border-b-[1px] [&>*]:mb-4 [&>*]:font-Agdasima flex flex-col justify-center">
-          <div className="feelslike text-lg">Feels like:</div>
-          <div className="cloudpct">Cloud-pct:</div>
-          <div className="maxtemp">Max-temp:</div>
-          <div className="mintemp">Min-temp:</div>
-        </div>
+        <div className="sidebarleft mt-[17px] w-15 h-60 [&>*]:w-[15.5rem]  [&>*]:border-black [&>*]:border-b-[1px] [&>*]:mb-4 [&>*]:font-Agdasima flex flex-col justify-center">
+        <div className="feelslike">Feels like:{fetchedcitydata.feels_like}</div>
+          <div className="cloudpct">Cloud-pct:{fetchedcitydata.cloud_pct}</div>
+          <div className="maxtemp">Max-temp:{fetchedcitydata.max_temp}</div>
+          <div className="mintemp">Min-temp:{fetchedcitydata.min_temp}</div>
+          </div>
         <div className="center">
-          <Square city="Pokhara" className="mt-0" />
+          <Square city={searchinput} className="mt-0" />
         </div>
-        <div className="sidebarright mt-[17px] ml-[-23px] w-15 h-60 [&>*]:w-[15.5rem] [&>*]:h-5 [&>*]:border-black [&>*]:border-b-[1px] [&>*]:mb-4 [&>*]:font-Agdasima flex flex-col justify-center">
-          <div className="feelslike">Feels like:</div>
-          <div className="cloudpct">Cloud-pct:</div>
-          <div className="maxtemp">Max-temp:</div>
-          <div className="mintemp">Min-temp:</div>
+        <div className="sidebarright mt-[17px] ml-[-23px] w-15 h-60 [&>*]:w-[15.5rem]  [&>*]:border-black [&>*]:border-b-[1px] [&>*]:mb-4 [&>*]:font-Agdasima flex flex-col justify-center">
+        <div className="humidity">Humidity:{fetchedcitydata.humidity}</div>
+          <div className="sunrise">Sunrise:{fetchedcitydata.sunrise}</div>
+          <div className="sunset">Sunset:{fetchedcitydata.sunset}</div>
+          <div className="windspeed">Wind speed:{fetchedcitydata.wind_speed}</div>
+        
         </div>
       </div>
 

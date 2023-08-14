@@ -18,7 +18,7 @@ const Square = ({ city }) => {
         city:city
       }
    
-    })
+    });
     // console.log(fetcheddata.data);
     setfetcheddata(fetcheddata.data);
     // console.log(fetcheddata);
