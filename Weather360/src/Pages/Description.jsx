@@ -27,21 +27,22 @@ const Description = ({ searchtried }) => {
     <>
       {/* <h1 className="center">{searchinput}</h1> */}
       {/* <h1>This is the searched thing:{searchinput}</h1> */}
-      <div className="descriptioncontainer flex justify-evenly font-Roboto Condensed ">
-        <div className="sidebarleft mt-[17px] w-15 h-60 [&>*]:w-[15.5rem] [&>*]:h-5 [&>*]:border-black [&>*]:border-b-[1px] [&>*]:mb-4 [&>*]:font-Agdasima ">
-          <div className="feelslike">Feels like:</div>
-          <div className="cloudpct">Cloud-pct</div>
-          <div className="maxtemp">Max-temp</div>
-          <div className="mintemp">Min-temp</div>
+      <div></div>
+      <div className="descriptioncontainer flex justify-evenly items-center font-Roboto Condensed h-[20.2rem]  bg-red-200">
+        <div className="sidebarleft mt-[17px] w-15 h-60 [&>*]:w-[15.5rem] [&>*]:h-5 [&>*]:border-black [&>*]:border-b-[1px] [&>*]:mb-4 [&>*]:font-Agdasima flex flex-col justify-center">
+          <div className="feelslike text-lg">Feels like:</div>
+          <div className="cloudpct">Cloud-pct:</div>
+          <div className="maxtemp">Max-temp:</div>
+          <div className="mintemp">Min-temp:</div>
         </div>
         <div className="center">
           <Square city="Pokhara" className="mt-0" />
         </div>
-        <div className="sidebarright mt-[17px] ml-[-23px] w-15 h-60 [&>*]:w-[15.5rem] [&>*]:h-5 [&>*]:border-black [&>*]:border-b-[1px] [&>*]:mb-4 [&>*]:font-Agdasima">
+        <div className="sidebarright mt-[17px] ml-[-23px] w-15 h-60 [&>*]:w-[15.5rem] [&>*]:h-5 [&>*]:border-black [&>*]:border-b-[1px] [&>*]:mb-4 [&>*]:font-Agdasima flex flex-col justify-center">
           <div className="feelslike">Feels like:</div>
-          <div className="cloudpct">Cloud-pct</div>
-          <div className="maxtemp">Max-temp</div>
-          <div className="mintemp">Min-temp</div>
+          <div className="cloudpct">Cloud-pct:</div>
+          <div className="maxtemp">Max-temp:</div>
+          <div className="mintemp">Min-temp:</div>
         </div>
       </div>
 
